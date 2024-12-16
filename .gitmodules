@@ -1,0 +1,3 @@
+[submodule "SocksProxy"]
+	path = SocksProxy
+	url = https://github.com/billz/SocksProxy
