@@ -9,14 +9,14 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
 2. Update the `manifest.json` file by incrementing the `id` value and including your plugin's details.
 
 ### Detailed instructions
-1. Fork this repository:
+1. Create a new fork of this repository, then clone it:
    ```
    git clone https://github.com/<your-username>/plugins.git
    cd plugins
    ```
 2. Add your plugin as a submodule:
    ```
-   git submodule add https://github.com/<your-plugin-repo> <plugin-name>
+   git submodule add https://github.com/<your-plugin-repo>
    ```
 3. Verify that `.gitmodules` now contains an entry similar to:
    ```
@@ -24,11 +24,7 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
         path = <plugin-name>
         url = https://github.com/<your-plugin-repo>
    ```
-4. Stage the changes:
-   ```
-   git add .gitmodules
-   ```
-5. Add your plugin to the `manifest.json` file. Increment the `id` value, then add your plugin's details in JSON format:
+4. Add your plugin to the `manifest.json` file. Increment the `id` value, then add your plugin's details in JSON format:
    
    ```
    "id": "<increment-last-id>",
@@ -64,16 +60,12 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
     }
    ...
    ```
-7. Stage the changes:
+5. Commit and push your changes:
    ```
-   git add manifest.json
-   ```
-8. Commit and push your changes:
-   ```
-   git commit -m "Add <plugin-name> to submodules and update manifest.json"
+   git commit -am "Add <plugin-name> to submodules and update manifest.json"
    git push
    ```
-9. Open a pull request in this repository by choosing **Pull requests > New pull request**. Select your fork and branch and create the pull request with a descriptive title and summary of your changes.
+6. Open a pull request in this repository by choosing **Pull requests > New pull request**. Select your fork and branch and create the pull request with a descriptive title and summary of your changes.
 
 ### Notes
 Plugin submissions are tested and validated before they're included in the RaspAP plugins repo. The `plugins.manifest` is added as a dependency to the [main RaspAP respository](https://github.com/RaspAP/raspap-webgui). If approved, your plugin will be available to users via RaspAP's plugin manager in the next general release.
