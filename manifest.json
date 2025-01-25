@@ -1,0 +1,36 @@
+{
+  "plugins": [
+    {
+      "id": "1",
+      "name": "Socks Proxy",
+      "version": "v1.0.1-beta",
+      "description": "A Dante SOCKS v5 proxy server add-on for RaspAP",
+      "author": "Bill Z",
+      "author_uri": "https://github.com/billz",
+      "plugin_uri": "https://github.com/billz/SocksProxy__",
+      "license": "GPL-3.0",
+      "namespace": "RaspAP\\Plugins\\SocksProxy",
+      "configuration": [
+        {
+          "source": "config/danted.conf",
+          "destination": "/etc/danted.conf"
+        }
+      ],
+      "default_locale": "en_US",
+      "dependencies": {
+        "dante-server": "1.4.2"
+      },
+      "icon": "fas fa-socks",
+      "manifest_version": "1.0",
+      "sudoers": [
+        "www-data ALL=(ALL) NOPASSWD:/bin/systemctl * danted.service",
+        "www-data ALL=(ALL) NOPASSWD:/bin/cat /etc/danted.conf",
+        "www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/danted.conf /etc/danted.conf"
+      ],
+      "user_nonprivileged": {
+        "name": "danteuser",
+        "pass": "sockspass"
+      }
+    }
+  ]
+}
