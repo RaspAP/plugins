@@ -65,7 +65,7 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
    git commit -am "Add <plugin-name> to submodules and update manifest.json"
    git push
    ```
-6. Open a pull request in this repository by choosing **Pull requests > New pull request**. Select your fork and branch and create the pull request with a descriptive title and summary of your changes.
+6. Open a pull request in this repository by choosing **Pull requests > New pull request**. Choose "Compare across forks" and select your fork and branch. Create the pull request with a descriptive title and summary of your changes.
 
 ### Notes
 Plugin submissions are tested and validated before they're included in the RaspAP plugins repo. The `plugins.manifest` is added as a dependency to the [main RaspAP respository](https://github.com/RaspAP/raspap-webgui). If approved, your plugin will be available to users via RaspAP's plugin manager in the next general release.
