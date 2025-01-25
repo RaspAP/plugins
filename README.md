@@ -6,7 +6,7 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
 
 ### Requirements
 1. Modify the `.gitmodules` file to include your plugin repository as a submodule.
-2. Update the `plugins.manifest` file by incrementing the `id` value and including your plugin's details.
+2. Update the `manifest.json` file by incrementing the `id` value and including your plugin's details.
 
 ### Detailed instructions
 1. Fork this repository:
@@ -28,7 +28,7 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
    ```
    git add .gitmodules
    ```
-5. Add your plugin to the `plugins.manifest` file. Increment the `id` value, then add your plugin's details in JSON format:
+5. Add your plugin to the `manifest.json` file. Increment the `id` value, then add your plugin's details in JSON format:
    
    ```
    "id": "<increment-last-id>",
@@ -66,11 +66,11 @@ We welcome contributions from plugin authors to the RaspAP plugins repository! F
    ```
 7. Stage the changes:
    ```
-   git add plugins.manifest
+   git add manifest.json
    ```
 8. Commit and push your changes:
    ```
-   git commit -m "Add <plugin-name> to submodules and update plugins.manifest"
+   git commit -m "Add <plugin-name> to submodules and update manifest.json"
    git push
    ```
 9. Open a pull request in this repository by choosing **Pull requests > New pull request**. Select your fork and branch and create the pull request with a descriptive title and summary of your changes.
