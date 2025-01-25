@@ -7,7 +7,7 @@
       "description": "A Dante SOCKS v5 proxy server add-on for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
-      "plugin_uri": "https://github.com/billz/SocksProxy__",
+      "plugin_uri": "https://github.com/billz/SocksProxy",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\SocksProxy",
       "configuration": [
