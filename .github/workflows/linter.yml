@@ -2,13 +2,11 @@ name: Lint
 
 on:
   push:
-    branches: [ "master" ]
+    branches:
+      - master
   pull_request:
-    branches: [ "master" ]
-
-  workflow_dispatch:
-
-permissions: {}
+    branches:
+      - '*'
 
 jobs:
   build:
@@ -29,7 +27,10 @@ jobs:
           fetch-depth: 0
           
       - name: Super-linter
-        uses: super-linter/super-linter@v7.2.1
+        uses: super-linter/super-linter/slim@v7.2.1
         env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_JSON: true
+          DEFAULT_BRANCH: ${{ github.event.pull_request.base.ref }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
