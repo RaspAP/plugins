@@ -1,3 +1,5 @@
+[![Super-Linter](https://github.com/RaspAP/plugins/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 # RaspAP plugins
 This repo contains [custom user plugins](https://docs.raspap.com/custom-plugins/) to extend RaspAP's core functionality. These guidelines exist to assist plugin authors with adding their plugins to RaspAP.
 
