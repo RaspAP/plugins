@@ -11,7 +11,6 @@ This repo is included as a dependency of the [main RaspAP respository](https://g
 
 Adding your plugin for inclusion by RaspAP is done by incrementing the `id` value in `manifest.json` and adding your plugin's details in JSON format.
 
-### Step-by-step
 1. Create a new fork of this repository by choosing **Fork > Create a new fork**.
 2. When this is done, clone your fork and change into the source folder:
    ```
@@ -66,4 +65,4 @@ Adding your plugin for inclusion by RaspAP is done by incrementing the `id` valu
 ### Notes
 The `manifest.json` file is automatically validated by a JSON linter. Invalid JSON contained in a pull request will be flagged by the GitHub action. If your JSON is invalid, close the pull request, fix `manifest.json` (validate it beforehand with your code editor or by using one of many [online tools](https://jsonlint.com/)), commit the change and submit a new pull request.
 
-All plugin submissions are tested and validated prior to inclusion in the RaspAP plugins repo. If approved, your plugin will be available to users via the plugin manager UI in the next general release of RaspAP.
+All plugin submissions are thoroughly tested and validated prior to inclusion in the RaspAP plugins repo. If approved, your plugin will immediately be made available to users via RaspAP's Plugin Manager UI.
