@@ -8,6 +8,7 @@
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
       "plugin_uri": "https://github.com/billz/SocksProxy",
+      "plugin_docs": "https://github.com/billz/SocksProxy",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\SocksProxy",
       "configuration": [
@@ -41,6 +42,7 @@
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
       "plugin_uri": "https://github.com/RaspAP/DynDNS",
+      "plugin_docs": "https://docs.raspap.com/dynamicdns/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\DynDNS",
       "javascript": {
