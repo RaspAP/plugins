@@ -22,6 +22,7 @@
         "dante-server": "1.4.2"
       },
       "icon": "fas fa-socks",
+      "install_path": "plugins",
       "manifest_version": "1.0",
       "sudoers": [
         "www-data ALL=(ALL) NOPASSWD:/bin/systemctl * danted.service",
@@ -31,8 +32,7 @@
       "user_nonprivileged": {
         "name": "danteuser",
         "pass": "sockspass"
-      },
-      "install_path": "plugins"
+      }
     },
     {
       "id": "2",
@@ -45,14 +45,15 @@
       "plugin_docs": "https://docs.raspap.com/dynamicdns/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\DynDNS",
-      "javascript": {
-        "source": "templates/app/js/DynDNS.js"
-      },
       "default_locale": "en_US",
       "dependencies": {
         "ddclient": "3.10.0-2"
       },
       "icon": "fas fa-globe",
+      "install_path": "plugins-available",
+      "javascript": {
+        "source": "templates/app/js/DynDNS.js"
+      },
       "manifest_version": "1.0",
       "sudoers": [
         "www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/ddclientddata /etc/ddclient.conf",
@@ -60,8 +61,7 @@
         "www-data ALL=(ALL) NOPASSWD:/bin/systemctl stop ddclient.service",
         "www-data ALL=(ALL) NOPASSWD:/bin/cat /etc/ddclient.conf",
         "www-data ALL=(ALL) NOPASSWD:/usr/bin/ddclient -daemon=0 -debug -verbose -noquiet"
-      ],
-      "install_path": "plugins-available"
+      ]
     }
   ]
 }
