@@ -42,6 +42,10 @@ Adding your plugin for inclusion by RaspAP is done by incrementing the `id` valu
        "some-apt-package": "1.0"
      },
      "icon": "fas fa-meteor",
+     "install_path": "plugins",
+     "javascript": {
+        "source": "templates/app/js/AmazingPlugin.js"
+      },
      "manifest_version": "1.0",
      "sudoers": [
        "www-data ALL=(ALL) NOPASSWD:/bin/systemctl * myplugin.service",
@@ -51,8 +55,7 @@ Adding your plugin for inclusion by RaspAP is done by incrementing the `id` valu
      "user_nonprivileged": {
        "name": "pluginuser",
        "pass": "pluginpass"
-     },
-      "install_path": "plugins"
+     }
     }
    ```
    
