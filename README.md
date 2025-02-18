@@ -50,9 +50,9 @@ Adding your plugin for inclusion by RaspAP is done by incrementing the `id` valu
      "user_nonprivileged": {
        "name": "pluginuser",
        "pass": "pluginpass"
-     }
-     --snip--
-     ...
+     },
+      "install_path": "plugins"
+    }
    ```
    
 4. Commit and push your changes:
