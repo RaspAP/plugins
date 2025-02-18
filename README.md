@@ -28,6 +28,7 @@ Adding your plugin for inclusion by RaspAP is done by incrementing the `id` valu
      "author": "A. Plugin Author",
      "author_uri": "https://github.com/",
      "plugin_uri": "https://github.com/PluginAuthor/AmazingPlugin",
+     "plugin_docs": "https://github.com/PluginAuthor/AmazingPlugin",
      "license": "GPL-3.0",
      "namespace": "RaspAP\\Plugins\\AmazingPlugin",
      "configuration": [
