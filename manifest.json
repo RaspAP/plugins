@@ -45,6 +45,12 @@
       "plugin_docs": "https://docs.raspap.com/dynamicdns/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\DynDNS",
+      "configuration": [
+        {
+          "source": "config/ddns-services.json",
+          "destination": "config/ddns-services.json"
+        }
+      ],
       "default_locale": "en_US",
       "dependencies": {
         "ddclient": "3.10.0-2"
