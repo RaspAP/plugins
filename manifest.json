@@ -101,6 +101,33 @@
         "www-data ALL=(ALL) NOPASSWD:/usr/bin/tee /etc/iptables/rules.v4",
         "www-data ALL=(ALL) NOPASSWD:/usr/bin/tee /etc/iptables/rules.v6"
       ]
+    },
+    {
+      "id": "4",
+      "name": "NTP Server",
+      "version": "v1.1.0",
+      "description": "A Network Time Protocol (NTP) server for RaspAP",
+      "author": "Bill Z",
+      "author_uri": "https://github.com/billz",
+      "plugin_uri": "https://github.com/RaspAP/NTPServer",
+      "plugin_docs": "https://docs.raspap.com/ntp/",
+      "license": "GPL-3.0",
+      "namespace": "RaspAP\\Plugins\\NTPServer",
+      "default_locale": "en_US",
+      "dependencies": {
+        "ntp": "1.2.2"
+      },
+      "icon": "far fa-clock",
+      "install_path": "plugins-available",
+      "javascript": {
+        "source": "templates/app/js/NTPServer.js"
+      },
+      "manifest_version": "1.0",
+      "sudoers": [
+        "www-data ALL=(ALL) NOPASSWD:/usr/bin/ntpq *",
+        "www-data ALL=(ALL) NOPASSWD:/bin/systemctl * ntpd.service",
+        "www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/ntpdata /etc/ntpsec/ntp.conf"
+      ]
     }
   ]
 }
