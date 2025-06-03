@@ -215,6 +215,7 @@
         "nyx": "2.1.0"
       },
       "icon": "fas ra-onion",
+      "install_path": "plugins",
       "manifest_version": "1.0",
       "sudoers": [
         "www-data ALL=(ALL) NOPASSWD:/bin/systemctl * tor@default.service",
