@@ -214,7 +214,7 @@
         "tor": "0.4.7.16",
         "nyx": "2.1.0"
       },
-      "icon": "fas ra-torproxy",
+      "icon": "ra-torproxy",
       "install_path": "plugins",
       "manifest_version": "1.0",
       "sudoers": [
