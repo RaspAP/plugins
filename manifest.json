@@ -187,7 +187,7 @@
     {
       "id": "6",
       "name": "Tor Proxy",
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "description": "A Tor proxy server add-on for RaspAP",
       "author": "Bill Zimmerman",
       "author_uri": "https://github.com/billz",
@@ -199,14 +199,6 @@
         {
           "source": "config/torrc",
           "destination": "/etc/tor/torrc"
-        }
-      ],
-      "permissions": [
-        {
-          "file": "/run/tor/control.authcookie",
-          "owner": "debian-tor",
-          "group": "debian-tor",
-          "mode": "0755"
         }
       ],
       "default_locale": "en_US",
