@@ -183,6 +183,36 @@
         "www-data ALL=(ALL) NOPASSWD:/usr/bin/tailscale *",
         "www-data ALL=(ALL) NOPASSWD:/etc/raspap/networking/ts-optimize.sh"
       ]
+    },
+    {
+      "id": "6",
+      "name": "Tor Proxy",
+      "version": "v1.1.0",
+      "description": "A Tor proxy server add-on for RaspAP",
+      "author": "Bill Zimmerman",
+      "author_uri": "https://github.com/billz",
+      "plugin_uri": "https://github.com/billz/TorProxy",
+      "plugin_docs": "https://github.com/billz/TorProxy",
+      "license": "GPL-3.0",
+      "namespace": "RaspAP\\Plugins\\TorProxy",
+      "configuration": [
+        {
+          "source": "config/torrc",
+          "destination": "/etc/tor/torrc"
+        }
+      ],
+      "default_locale": "en_US",
+      "dependencies": {
+        "tor": "0.4.7.16",
+        "nyx": "2.1.0"
+      },
+      "icon": "ra-torproxy",
+      "install_path": "plugins",
+      "manifest_version": "1.0",
+      "sudoers": [
+        "www-data ALL=(ALL) NOPASSWD:/bin/systemctl * tor@default.service",
+        "www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/torrc /etc/tor/torrc"
+      ]
     }
   ]
 }
