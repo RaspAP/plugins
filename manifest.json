@@ -37,11 +37,11 @@
     {
       "id": "2",
       "name": "Dynamic DNS",
-      "version": "v1.0.0",
+      "version": "v1.0.1",
       "description": "A Dynamic DNS service add-on for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
-      "plugin_uri": "https://github.com/RaspAP/DynDNS",
+      "plugin_uri": "https://github.com/billz/DynDNS",
       "plugin_docs": "https://docs.raspap.com/dynamicdns/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\DynDNS",
@@ -56,7 +56,7 @@
         "ddclient": "3.10.0-2"
       },
       "icon": "fas fa-globe",
-      "install_path": "plugins-available",
+      "install_path": "plugins",
       "javascript": {
         "source": "templates/app/js/DynDNS.js"
       },
@@ -72,11 +72,11 @@
     {
       "id": "3",
       "name": "Firewall",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "description": "A Firewall add-on with iptables rules tailored for RaspAP",
       "author": "zbchristian",
       "author_uri": "https://github.com/zbchristian",
-      "plugin_uri": "https://github.com/RaspAP/Firewall",
+      "plugin_uri": "https://github.com/billz/Firewall",
       "plugin_docs": "https://docs.raspap.com/firewall/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\Firewall",
@@ -88,7 +88,7 @@
       ],
       "default_locale": "en_US",
       "icon": "fas fa-fire-alt",
-      "install_path": "plugins-available",
+      "install_path": "plugins",
       "javascript": {
         "source": "templates/app/js/Firewall.js"
       },
@@ -105,11 +105,11 @@
     {
       "id": "4",
       "name": "NTP Server",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "description": "A Network Time Protocol (NTP) server for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
-      "plugin_uri": "https://github.com/RaspAP/NTPServer",
+      "plugin_uri": "https://github.com/billz/NTPServer",
       "plugin_docs": "https://docs.raspap.com/ntp/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\NTPServer",
@@ -118,7 +118,7 @@
         "ntp": "1.2.2"
       },
       "icon": "far fa-clock",
-      "install_path": "plugins-available",
+      "install_path": "plugins",
       "javascript": {
         "source": "templates/app/js/NTPServer.js"
       },
