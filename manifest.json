@@ -36,8 +36,8 @@
     },
     {
       "id": "2",
-      "name": "Dynamic DNS",
-      "version": "v1.0.1",
+      "name": "DynDNS",
+      "version": "v1.0.2",
       "description": "A Dynamic DNS service add-on for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
