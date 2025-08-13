@@ -72,7 +72,7 @@
     {
       "id": "3",
       "name": "Firewall",
-      "version": "v1.1.1",
+      "version": "v1.1.2",
       "description": "A Firewall add-on with iptables rules tailored for RaspAP",
       "author": "zbchristian",
       "author_uri": "https://github.com/zbchristian",
