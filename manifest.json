@@ -216,9 +216,9 @@
     },
     {
       "id": "7",
-      "name": "TShark (Wireshark)",
+      "name": "Wireshark",
       "version": "v1.0.0",
-      "description": "A TShark (Wireshark) CLI packet analyzer for RaspAP",
+      "description": "A TShark (Wireshark) packet capture plugin for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
       "plugin_uri": "https://github.com/RaspAP/Wireshark",
