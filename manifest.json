@@ -215,46 +215,20 @@
       ]
     },
     {
-      "id": "7",
-      "name": "Wireshark",
-      "version": "v1.0.0",
-      "description": "A TShark (Wireshark) packet capture plugin for RaspAP",
-      "author": "Bill Z",
-      "author_uri": "https://github.com/billz",
-      "plugin_uri": "https://github.com/RaspAP/Wireshark",
-      "plugin_docs": "http://docs.raspap.com/Wireshark",
-      "license": "GPL-3.0",
-      "namespace": "RaspAP\\Plugins\\Wireshark",
-      "default_locale": "en_US",
-      "dependencies": {
-        "tshark": "4.4.7"
-      },
-      "icon": "ra-wireshark",
-      "install_path": "plugins-available",
-      "manifest_version": "1.0",
-      "sudoers": [
-        "www-data ALL=(ALL) NOPASSWD:/usr/bin/tshark *",
-        "www-data ALL=(ALL) NOPASSWD:/bin/cat /tmp/*.pcap",
-        "www-data ALL=(ALL) NOPASSWD:/bin/cat /tmp/*.pcapng",
-        "www-data ALL=(ALL) NOPASSWD:/bin/rm /tmp/*.pcap",
-        "www-data ALL=(ALL) NOPASSWD:/bin/rm /tmp/*.pcapng"
-      ]
-    },
-    {
       "id": "8",
       "name": "Captive portal",
       "version": "v1.0.0",
       "description": "A Captive Portal add-on for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
-      "plugin_uri": "https://github.com/RaspAP/",
-      "plugin_docs": "https://docs.raspap.com/features-insiders/captive/",
+      "plugin_uri": "https://github.com/RaspAP/Captive",
+      "plugin_docs": "https://docs.raspap.com/captive/",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\Captive",
-      "dpkgs": {
+      "dpkgs": [
         "nodogsplash_5.0.2-1_arm64.deb",
         "nodogsplash_5.0.2-1_armhf.deb"
-      },
+      ],
       "configuration": [
         {
           "source": "config/nodogsplash.conf",
@@ -262,23 +236,23 @@
         },
         {
           "source": "config/splash.html",
-          "destination": "/etc/nodogsplash/"
+          "destination": "/etc/nodogsplash/htdocs/"
         },
         {
           "source": "config/status.html",
-          "destination": "/etc/nodogsplash/"
+          "destination": "/etc/nodogsplash/htdocs/"
         },
         {
           "source": "config/status.html",
-          "destination": "/etc/nodogsplash/"
+          "destination": "/etc/nodogsplash/htdocs/"
         },
         {
           "source": "config/splash.css",
-          "destination": "/etc/nodogsplash/"
+          "destination": "/etc/nodogsplash/htdocs/"
         },
         {
           "source": "config/RaspAP-logo.svg",
-          "destination": "/etc/nodogsplash/images/"
+          "destination": "/etc/nodogsplash/htdocs/images/"
         }
       ],
       "default_locale": "en_US",
