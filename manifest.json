@@ -105,7 +105,7 @@
     {
       "id": "4",
       "name": "NTP Server",
-      "version": "v1.1.1",
+      "version": "v1.1.2",
       "description": "A Network Time Protocol (NTP) server for RaspAP",
       "author": "Bill Z",
       "author_uri": "https://github.com/billz",
@@ -115,7 +115,7 @@
       "namespace": "RaspAP\\Plugins\\NTPServer",
       "default_locale": "en_US",
       "dependencies": {
-        "ntp": "1.2.2"
+        "ntpsec": "1.2.2"
       },
       "icon": "far fa-clock",
       "install_path": "plugins",
