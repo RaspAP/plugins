@@ -302,12 +302,12 @@
       "description": "A Docker container management plugin for RaspAP",
       "author": "RaspAP",
       "author_uri": "https://github.com/RaspAP",
-      "plugin_uri": "https://github.com/cyrus104/raspap-insiders/tree/feat/docker-plugin/plugins-available/Docker",
+      "plugin_uri": "https://github.com/cyrus104/docker-plugin",
       "plugin_docs": "https://docs.raspap.com/docker",
       "license": "GPL-3.0",
       "namespace": "RaspAP\\Plugins\\Docker",
       "icon": "fab fa-docker",
-      "install_path": "plugins-available",
+      "install_path": "plugins",
       "manifest_version": "1.0",
       "default_locale": "en_US"
     }
