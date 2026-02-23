@@ -294,7 +294,53 @@
         "www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/nodogsplash.conf /etc/nodogsplash/nodogsplash.conf",
         "www-data ALL=(ALL) NOPASSWD:/usr/bin/ndsctl *"
       ]
+    },
+    {
+      "id": "9",
+      "name": "Docker",
+      "version": "v1.0.0",
+      "description": "A Docker container management plugin for RaspAP",
+      "author": "cyrus104",
+      "author_uri": "https://github.com/cyrus104",
+      "plugin_uri": "https://github.com/cyrus104/docker-plugin",
+      "plugin_docs": "https://docs.raspap.com/docker",
+      "license": "GPL-3.0",
+      "namespace": "RaspAP\\Plugins\\Docker",
+      "icon": "fab fa-docker",
+      "install_path": "plugins",
+      "manifest_version": "1.0",
+      "default_locale": "en_US",
+      "keys": [
+        {
+          "key_url": "https://download.docker.com/linux/debian/gpg",
+          "keyring": "/etc/apt/keyrings/docker.asc",
+          "repo": "config/docker.list",
+          "sources": "/etc/apt/sources.list.d/docker.list"
+        }
+      ],
+      "dependencies": {
+        "docker-ce": "latest",
+        "docker-ce-cli": "latest",
+        "containerd.io": "latest",
+        "docker-buildx-plugin": "latest",
+        "docker-compose-plugin": "latest"
+      },
+      "configuration": [
+        {
+          "source": "config/.gitkeep",
+          "destination": "/etc/raspap/docker/compose/.gitkeep"
+        }
+      ],
+      "sudoers": [
+        "www-data ALL=(ALL) NOPASSWD:/usr/bin/docker *",
+        "www-data ALL=(ALL) NOPASSWD:/usr/bin/docker compose *",
+        "www-data ALL=(ALL) NOPASSWD:/bin/systemctl start docker",
+        "www-data ALL=(ALL) NOPASSWD:/bin/systemctl stop docker",
+        "www-data ALL=(ALL) NOPASSWD:/bin/ls *"
+      ],
+      "javascript": {
+        "source": "app/js/Docker.js"
+      }
     }
   ]
 }
-
