@@ -294,7 +294,49 @@
         "www-data ALL=(ALL) NOPASSWD:/bin/cp /tmp/nodogsplash.conf /etc/nodogsplash/nodogsplash.conf",
         "www-data ALL=(ALL) NOPASSWD:/usr/bin/ndsctl *"
       ]
+    },
+    {
+      "id": "9",
+      "name": "Travel Profiles",
+      "version": "v0.1.0",
+      "description": "Explicit USB tethering, Ethernet, and hotel Wi-Fi uplink profiles for travel routers",
+      "author": "3liasen",
+      "author_uri": "https://github.com/3liasen",
+      "plugin_uri": "https://github.com/3liasen/raspap-travel-profiles",
+      "plugin_docs": "https://github.com/3liasen/raspap-travel-profiles/blob/main/README.md",
+      "license": "GPL-3.0",
+      "namespace": "RaspAP\\Plugins\\TravelProfiles",
+      "configuration": [
+        {
+          "source": "raspap-travel-profile",
+          "destination": "/usr/local/sbin/raspap-travel-profile"
+        },
+        {
+          "source": "NetworkManager-10-raspap-ap.conf",
+          "destination": "/etc/NetworkManager/conf.d/10-raspap-ap.conf"
+        }
+      ],
+      "permissions": [
+        {
+          "file": "/usr/local/sbin/raspap-travel-profile",
+          "owner": "root",
+          "group": "root",
+          "mode": "0750"
+        },
+        {
+          "file": "/etc/NetworkManager/conf.d/10-raspap-ap.conf",
+          "owner": "root",
+          "group": "root",
+          "mode": "0644"
+        }
+      ],
+      "default_locale": "en_US",
+      "icon": "fas fa-route",
+      "install_path": "plugins",
+      "manifest_version": "1.0",
+      "sudoers": [
+        "www-data ALL=(root) NOPASSWD:/usr/local/sbin/raspap-travel-profile *"
+      ]
     }
   ]
 }
-
